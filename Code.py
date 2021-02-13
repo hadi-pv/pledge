@@ -25,5 +25,3 @@ def send_email(to):
     with smtplib.SMTP_SSL("smtp.gmail.com",465) as smtp:
         smtp.login(MY_EMAIL,MY_PASS)
         smtp.send_message(message)
-
-send_email(MY_EMAIL)
